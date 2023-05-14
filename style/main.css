@@ -1,62 +1,62 @@
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-ExtraBold.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-ExtraBold.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-Arabic-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Bold.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Bold.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Bold.woff") format("woff"), url("../fonts/Montserrat-Arabic-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Black.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Black.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Black.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Black.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Black.woff") format("woff"), url("../fonts/Montserrat-Arabic-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-ExtraLight.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-ExtraLight.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-Arabic-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Light.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Light.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Light.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Light.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Light.woff") format("woff"), url("../fonts/Montserrat-Arabic-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Medium.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Medium.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Medium.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Medium.woff") format("woff"), url("../fonts/Montserrat-Arabic-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Regular.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Regular.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Regular.woff") format("woff"), url("../fonts/Montserrat-Arabic-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-SemiBold.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-SemiBold.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-SemiBold.woff") format("woff"), url("../fonts/Montserrat-Arabic-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Thin.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Thin.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Thin.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Thin.woff") format("woff"), url("../fonts/Montserrat-Arabic-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -273,63 +273,63 @@ html[dir=ltr] .mainBanner .swiper-button-next i, html[dir=ltr] .mainBanner .swip
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-ExtraBold.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-ExtraBold.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-Arabic-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Bold.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Bold.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Bold.woff") format("woff"), url("../fonts/Montserrat-Arabic-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Black.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Black.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Black.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Black.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Black.woff") format("woff"), url("../fonts/Montserrat-Arabic-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-ExtraLight.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-ExtraLight.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-Arabic-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Light.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Light.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Light.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Light.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Light.woff") format("woff"), url("../fonts/Montserrat-Arabic-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Medium.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Medium.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Medium.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Medium.woff") format("woff"), url("../fonts/Montserrat-Arabic-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Regular.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Regular.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Regular.woff") format("woff"), url("../fonts/Montserrat-Arabic-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-SemiBold.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-SemiBold.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-SemiBold.woff") format("woff"), url("../fonts/Montserrat-Arabic-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Arabic";
-  src: url("../../../fonts/Montserrat-Arabic-Thin.woff2") format("woff2"), url("../../../fonts/Montserrat-Arabic-Thin.woff") format("woff"), url("../../../fonts/Montserrat-Arabic-Thin.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Arabic-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Arabic-Thin.woff") format("woff"), url("../fonts/Montserrat-Arabic-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -1472,7 +1472,7 @@ html[dir=ltr] .counter-sec .counter-parent .counter-item .num-holder {
 }
 .services {
   padding: 70px 0 90px 0;
-  background-image: url(../../../images/services/services-banner.png);
+  background-image: url(../images/services/services-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
