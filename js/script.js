@@ -64,6 +64,47 @@ const newsSwiper = new Swiper(' .news .swiper', {
   }
 });
 
+// news swiper
+// const officeSwiper = new Swiper(' .office-swiper .swiper', {
+//   loop: true,
+//   // autoplay: true,
+//   pagination: {
+//     el: '.office-parent .swiper-pagination',
+//     clickable: true,
+//   },
+//   slidesPerView: 3,
+//   grid: {
+//     rows: 2,
+//   },
+//   spaceBetween: 0,
+//   navigation: {
+//     nextEl: '.office-parent .swiper-button-next ',
+//     prevEl: '.office-parent .swiper-button-prev',
+//   },
+//   // Responsive breakpoints
+//   // breakpoints: {
+//   //   350: {
+//   //     slidesPerView: 3,
+//   //     spaceBetween : 25 
+//   //   },
+//   // }
+// });
+
+var officeSwiper = new Swiper(".office-swiper .swiper ", {
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: " .office-parent .swiper-pagination",
+    clickable: true,
+  },
+    navigation: {
+    nextEl: '.office-parent .swiper-button-next ',
+    prevEl: '.office-parent .swiper-button-prev',
+  }
+});
 
 
 
@@ -179,6 +220,14 @@ if($(window).width() <= 992) {
     })
     }
 
+/************************************************************************************************** */
+
+// open search box
+
+$(".open-serach-btn").click(function(){
+  $(".search").fadeToggle(300) ;
+  $(".open-serach-btn i").toggleClass("la-times")
+})
 
 
 /************************************************************************************************** */

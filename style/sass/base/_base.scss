@@ -155,7 +155,7 @@ html[dir="ltr"]{
   align-items: center;
   justify-content: center;
   border: none;
-  z-index: 100;
+  z-index: 50;
   transition: all linear .3s;
   opacity: 0;
   visibility: hidden;
@@ -171,7 +171,6 @@ html[dir="ltr"]{
   top: -130px;
   transition: all linear .5s;
 }
-
 
 
 

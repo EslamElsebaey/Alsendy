@@ -307,6 +307,7 @@ html[dir="ltr"] .book-appointment{
         padding:5px 25px;
         opacity: 0;
         visibility: hidden; 
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         > li {
             border-bottom: 1px solid #e6e6e6 ;
         }
@@ -425,7 +426,7 @@ input{
     height: 100%;
     padding: 0 50px;
     border-radius: 22px;
-    border: 1px solid transparent;
+    border: none;
     outline: none ;
     font-size: 14px;
     font-weight: 400;
@@ -545,7 +546,7 @@ transform:  translateY(-50%) rotate(180deg)  !important;
 
 
 @include min-992 {
-    .bars{
+    .bars , .open-serach-btn{
         display: none;
     }
 }
@@ -588,10 +589,15 @@ transform:  translateY(-50%) rotate(180deg)  !important;
 
 
 @include max-992 {
+    .book-appointment{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 50;
+    }
     .main-header-cont {
         order: 5;
         margin: 0;
-        margin-top: 10px;
     }
     .topheader-links{
         display: block;
@@ -631,18 +637,18 @@ transform:  translateY(-50%) rotate(180deg)  !important;
     }
   
 
- .main-nav{
-flex-wrap: wrap;
+
 .search{
+    display: none;
+    position: relative;
+    z-index: 10;
     order: 3;
     width: 100%;
     margin-top: 12px;
 }
-.logo{
-    order: 1;
-}
 
-}
+
+
 
 .li-drop > a::after{
     font-size: 16px;
@@ -684,7 +690,7 @@ nav{
         align-items: flex-start;
     }
     
-    .bars , .search-icon{
+    .bars , .search-icon , .open-serach-btn{
         color: #fff;
         padding: 0;
        i{
@@ -693,10 +699,13 @@ nav{
        }
         }
         .bars{
+            margin-inline-start: 20px;
+        }  
+        .open-serach-btn ,  .bars {
             &:hover{
                 color: #fff;
             }
-        }  
+        }
         .close-holder-mob{
             display: flex;
             justify-content: flex-end;
@@ -720,30 +729,20 @@ nav{
 
 @include max-768 {
     html[dir=ltr] .book-appointment{
-        padding: 10px 7px;
-        font-size: 11px;
-        width: auto;
+        padding: 10px 15px;
+        min-width: auto;
     }
+   
     nav{
-        padding: 16px 20px;
+        padding: 18px 20px;
     }
     header{
         padding: 12px 20px 0 20px;
     }
     .logo img{
-        width: 160px;
+        width: 180px;
     }
-    html[dir="ltr"]{
-        .logo img{
-            width: 150px;
-        }
-    }
-    .book-appointment{
-        min-width: auto;
-        width: 100px;
-        font-size: 13px;
-        height: 34px;
-    }
+  
 
 
 
@@ -964,6 +963,9 @@ html[dir="ltr"]{
 
 
 @include max-768{
+    .mainBanner .mainBanner-parent{
+        clip-path:  ellipse(195% 100% at 50% 0%); 
+     }
     .mainBanner .banner-desc span{
         font-size: 14px;
         margin-bottom: 13px;
@@ -1017,44 +1019,48 @@ html[dir="ltr"]{
 // About 
 .about {
     padding: 90px 0;
-    .main-desc {
+ 
+}
+.main-desc {
+    text-align: center;
+    h2{
+        font-size: 24px;
+        line-height: 36px;
+        color: #004658;
+        font-weight: 700;
         text-align: center;
-        h2{
-            font-size: 24px;
-            line-height: 36px;
-            color: #004658;
-            font-weight: 700;
-            text-align: center;
-            max-width: 45%;
-            margin: auto;
-            position: relative;
-            &:after{
-                content: "";
-                position: absolute;
-                bottom: -20px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 70px;
-                height: 3px;
-                background-color: #02c2da;
-            }
+        max-width: 45%;
+        margin: auto;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #02c2da;
         }
-        p{
-            margin-top: 50px;
-            max-width: 85%;
-            margin: 50px auto 25px auto;
-            font-weight: 300;
-        }
-        .readMore{
-            font-size: 14px;
-            text-decoration: underline;
-            color: #999999;
-            font-weight: 300;
-            text-align: center;
-            transition: color linear .2s;
-            &:hover{
-                color: #02c2da;
-            }
+    }
+    p{
+        margin-top: 50px;
+        max-width: 85%;
+        margin: 50px auto 25px auto;
+        font-weight: 300;
+        font-size: 16px;
+        color: #000;
+        line-height: 28px;
+    }
+    .readMore{
+        font-size: 14px;
+        text-decoration: underline;
+        color: #999999;
+        font-weight: 300;
+        text-align: center;
+        transition: color linear .2s;
+        &:hover{
+            color: #02c2da;
         }
     }
 }
@@ -1092,6 +1098,8 @@ html[dir="ltr"]{
             margin-bottom: 20px;
         }
         .vision-desc{
+            letter-spacing: -1px;
+            word-spacing: 6px;
             font-size: 16px;
             line-height: 28px;
             color: #000000;
@@ -1153,7 +1161,7 @@ html[dir="ltr"]{
 
 
 @include max-992 {
-    .about .main-desc h2 , .about .main-desc p{
+     .main-desc h2 ,  .main-desc p{
         max-width: 100%;
     }
     .vision-counter-sec .vision-item .vision-icon{
@@ -1190,13 +1198,11 @@ html[dir="ltr"]{
     .counter-sec .counter-parent .counter-item .num-holder h4, .counter-sec .counter-parent .counter-item .num-holder span{
         font-size: 35px;
     }
-    .about .main-desc h2, .about .main-desc p{
+   .main-desc h2,  .main-desc p{
         font-size: 17px;
         line-height: 1.7;
     }
-    .about .main-desc p{
-        text-align: justify;
-        text-align-last: center;
+     .main-desc p{
         font-size: 15px;
         line-height: 1.7;
         margin:  40px auto 20px auto;
@@ -1223,7 +1229,8 @@ html[dir="ltr"]{
     }
     .vision-counter-sec .vision-item .vision-desc{
         font-size: 15px;
-        line-height: 1.9;
+        line-height: 1.7;
+        word-spacing: 2px;
     }
     html[dir="ltr"]{
         .vision-counter-sec .vision-item .vision-desc{
@@ -1246,7 +1253,7 @@ html[dir="ltr"]{
 
 .services{
     padding: 70px 0 90px 0;
-    background-image: url(../images/services/services-banner.png);
+    background-image: url(../images/home/services/services-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1423,15 +1430,16 @@ html[dir="ltr"]{
         line-height: 1.4;
     }
     .services .service-item div{
-        height: 60px;
-        margin-bottom: 25px;
+        height: 55px;
+       margin:20px 0 18px 0;
     }
     .services .service-item > a{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 42px 10px;
+        padding:  5px;
+        height: auto;
     }
     .service-request-sec h2{
         font-size: 17px;
@@ -1457,7 +1465,18 @@ html[dir="ltr"]{
      }
      .services .service-item h3{
         font-size: 15px;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        align-items: flex-start;
+        justify-content: center;
      }
+     html[dir="ltr"]{
+        .services .service-item h3{
+            line-height: 1.3;
+         }
+     }
+    
   }
 
 //   **********************************************************************************************
@@ -1472,6 +1491,19 @@ html[dir="ltr"]{
     .swiper-button-next, .swiper-button-prev{
         top: 29%;
     }
+    .title{
+        font-size: 30px;
+        color: #004658;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+    }
+}
+.news-parent{
+    position: relative;
+}
+.news , .office-swiper {
     .swiper-button-prev, .swiper-rtl .swiper-button-next{
         left: -60px;
     }
@@ -1489,17 +1521,6 @@ html[dir="ltr"]{
             opacity: 1;
         }
     }
-    .title{
-        font-size: 30px;
-        color: #004658;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 35px;
-        text-transform: capitalize;
-    }
-}
-.news-parent{
-    position: relative;
 }
 
 
@@ -1551,7 +1572,7 @@ html[dir="ltr"]{
     }
 }
 
-.news{
+.news , .office-swiper{
      .swiper-pagination-bullet {
         background-color: #000;
         opacity: 0.302;
