@@ -64,47 +64,49 @@ const newsSwiper = new Swiper(' .news .swiper', {
   }
 });
 
-// news swiper
-// const officeSwiper = new Swiper(' .office-swiper .swiper', {
-//   loop: true,
-//   // autoplay: true,
-//   pagination: {
-//     el: '.office-parent .swiper-pagination',
-//     clickable: true,
-//   },
-//   slidesPerView: 3,
-//   grid: {
-//     rows: 2,
-//   },
-//   spaceBetween: 0,
-//   navigation: {
-//     nextEl: '.office-parent .swiper-button-next ',
-//     prevEl: '.office-parent .swiper-button-prev',
-//   },
-//   // Responsive breakpoints
-//   // breakpoints: {
-//   //   350: {
-//   //     slidesPerView: 3,
-//   //     spaceBetween : 25 
-//   //   },
-//   // }
-// });
 
-var officeSwiper = new Swiper(".office-swiper .swiper ", {
-  slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 30,
+
+// officeSwiper swiper
+var officeSwiper = new Swiper(".office-swiper .swiper", {
+  // loop: true,
   pagination: {
-    el: " .office-parent .swiper-pagination",
+    el: ".office-swiper .swiper-pagination",
     clickable: true,
   },
-    navigation: {
-    nextEl: '.office-parent .swiper-button-next ',
-    prevEl: '.office-parent .swiper-button-prev',
-  }
+  navigation: {
+    nextEl: '.office-swiper .swiper-button-next ',
+    prevEl: '.office-swiper .swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    767: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+    },
+  },
 });
+
+
 
 
 

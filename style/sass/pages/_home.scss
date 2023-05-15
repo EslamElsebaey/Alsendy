@@ -1214,6 +1214,9 @@ html[dir="ltr"]{
         .about .main-desc p{
             line-height: 1.55;
         }
+        .main-desc h2, .main-desc p{
+            line-height: 1.5;
+        }
     }
    
     .vision-counter-sec .vision-parent{
@@ -1256,7 +1259,7 @@ html[dir="ltr"]{
 
 .services{
     padding: 70px 0 90px 0;
-    background-image: url(../images/home/services/services-banner.png);
+    background-image: url(../../../images/home/services/services-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
