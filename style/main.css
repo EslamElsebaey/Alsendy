@@ -1479,7 +1479,7 @@ html[dir=ltr] .counter-sec .counter-parent .counter-item .num-holder {
 }
 .services {
   padding: 70px 0 90px 0;
-  background-image: url(../../../images/home/services/services-banner.png);
+  background-image: url(../images/home/services/services-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2137,7 +2137,7 @@ html[dir=ltr] .message button {
   position: relative;
   -webkit-clip-path: ellipse(100% 100% at 50% 0%);
           clip-path: ellipse(100% 100% at 50% 0%);
-  background-image: url(../../../images/breadcrumb-bg.jpg);
+  background-image: url(../images/breadcrumb-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2260,7 +2260,7 @@ html[dir=ltr] .message button {
 
 .priorities-sec {
   padding: 95px 0 100px 0;
-  background-image: url(../../../images/about/priorities-banner.png);
+  background-image: url(../images/about/priorities-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
