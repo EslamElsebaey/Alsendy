@@ -373,7 +373,7 @@ html[dir="ltr"] .book-appointment{
         display: flex;
         align-items: center;
         a {
-            margin-inline-end: 30px;
+            margin-inline-end: 20px;
             &:hover {
                 i {
                     color: $main-color;
@@ -436,10 +436,13 @@ input{
         color: #b3b3b3;
     }
     &:focus{
-        outline: none;
-        border-color:$main-color;
+       background-color: #fff;
+       color: #004658;
     }
 }
+}
+.search-item input:focus + .search-btn i{
+    color: #004658;
 }
 
 .topheader-links{
@@ -690,7 +693,6 @@ nav{
        }
         }
         .bars{
-            margin-inline-start: 25px;
             &:hover{
                 color: #fff;
             }
@@ -718,8 +720,8 @@ nav{
 
 @include max-768 {
     html[dir=ltr] .book-appointment{
-        padding: 10px 17px;
-        font-size: 13px;
+        padding: 10px 7px;
+        font-size: 11px;
         width: auto;
     }
     nav{
@@ -731,14 +733,16 @@ nav{
     .logo img{
         width: 160px;
     }
+    html[dir="ltr"]{
+        .logo img{
+            width: 150px;
+        }
+    }
     .book-appointment{
         min-width: auto;
         width: 100px;
         font-size: 13px;
         height: 34px;
-    }
-    .bars{
-        margin-inline-start: 15px;
     }
 
 
@@ -968,14 +972,12 @@ html[dir="ltr"]{
         font-size: 20px;
     }
     .mainBanner-link img{
-        min-height: 340px;
+        min-height: 100vh;
         max-height: 100%;
     }
     .mainBanner .banner-desc h2{
-        font-size: 14px;
-        line-height: 2;
-        text-align: justify;
-        text-align-last: center;
+        font-size: 18px;
+        line-height: 1.8;
     }
     .mainBanner .swiper-buttons{
        display: none;
@@ -988,7 +990,7 @@ html[dir="ltr"]{
     }
     .mainBanner{
         padding-top: 0;
-        min-height: 340px;
+        min-height: 100vh;
     }
     html[dir=ltr] .mainBanner .banner-desc h2 {
         line-height: 1.4;
@@ -1420,12 +1422,16 @@ html[dir="ltr"]{
     html[dir=ltr] .service-request-sec h2{
         line-height: 1.4;
     }
+    .services .service-item div{
+        height: 60px;
+        margin-bottom: 25px;
+    }
     .services .service-item > a{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-        padding: 50px 20px;
+        padding: 42px 10px;
     }
     .service-request-sec h2{
         font-size: 17px;
@@ -1442,8 +1448,8 @@ html[dir="ltr"]{
     }
     .services .services-parent{
        display: grid;
-       grid-template-columns: 1fr;
-       row-gap: 20px;
+       grid-template-columns:  repeat(2 , 1fr);
+       gap: 20px;
      }
      .services .title{
         font-size: 20px;
