@@ -706,6 +706,9 @@ nav{
                 color: #fff;
             }
         }
+        .open-serach-btn i {
+            transform: scaleX(-1);
+        }
         .close-holder-mob{
             display: flex;
             justify-content: flex-end;
