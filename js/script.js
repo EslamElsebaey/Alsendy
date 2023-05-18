@@ -137,50 +137,14 @@ var officeSwiper = new Swiper(".office-swiper .swiper", {
 /************************************************************************************************** */
 
 
-// counters
+//  mixitup
 
 
 let currentPagePath = window.location.pathname;
 var currentPageName = currentPagePath.split('/').pop(); 
 
-if(currentPageName == "index.html" || currentPageName == "about.html" || currentPageName == "about-en.html" || currentPageName == "en.html" ) {
-  
-const mySection = document.querySelector('.counter-sec'); 
-const mySectionOffsetTop = mySection.offsetTop; 
-const windowHeight = window.innerHeight; 
-
-window.addEventListener('scroll', function() {
-  const scrollPosition = window.scrollY; 
-  if (scrollPosition > mySectionOffsetTop - windowHeight) {
 
 
-    let  numDivs  = document.querySelectorAll(".num-holder h4") ; 
-    let interval = 5000 ; 
-    
-  numDivs.forEach((numDiv)=>{
-    if(numDiv.innerHTML == "0"){
-      let startValue = 0 ; 
-      let endValue = parseInt(numDiv.dataset.num ) ; 
-      let duration =  Math.floor(interval / numDiv.dataset.num )  ;
-      let counter =  setInterval(() => {
-      startValue++ ;
-      numDiv.textContent = startValue ;
-       if(startValue == endValue){
-         clearInterval(counter)
-      }
-  }, duration);
-    }
-  
-} )
-
-    
-  }
-});
-}
-
-
-
-//  mixitup
 
 if(currentPageName == "clients.html" || currentPageName == "blog.html" || currentPageName == "clients-en.html" || currentPageName == "blog-en.html"){
 
