@@ -21,10 +21,88 @@ html[dir = "ltr"] {
 }
 
 
+// bread crump 
+
+.breadcrumb-sec{
+  height: 330px;
+  text-align: center;
+  color: #fff;
+ 
+}
+.breadcrumb-content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clip-path: ellipse(100% 100% at 50% 0%);
+  background-image: url(../images/breadcrumb-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      background-color: rgba($color: #004658, $alpha: 0.8);
+      z-index: 1;
+  }
+}
+.breadcrumb-details{
+  padding-top: 210px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.page-head{
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.link-item::after{
+  content: " / ";
+  padding: 0 5px;
+  color: #78c4d7;
+}
+.breadcrumb{
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+ 
+}
+.bread-link , .breadcrumb .active{
+  font-size: 12px;
+  color: #78c4d7;
+  font-weight: 300;
+  text-align: center;
+  transition: all linear .2s;
+}
+.breadcrumb li {
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+}
+.bread-link{
+  &:hover{
+      text-decoration: none;
+      color: #fff;
+  }
+}
+
+//end of  bread crump 
+
 
 img {
   image-rendering: -webkit-optimize-contrast ;
-  object-fit: cover;
 }
 
 .ul-es {
@@ -34,21 +112,27 @@ img {
 }
 
 // Swiper basic reset
-.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after{
-  content: "";
-}
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
-  content: "";
-}
-
-.swiper-button-next, .swiper-button-prev{
-  i{
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0.2;
+.mainBanner , .news , .blog-post , .office-swiper {
+  .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after{
+    content: "";
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: "";
   }
 }
+
+
+.mainBanner{
+  .swiper-button-next, .swiper-button-prev{
+    i{
+      font-size: 40px;
+      color: #ffffff;
+      text-align: center;
+      opacity: 0.2;
+    }
+  }
+}
+
 
 
 html[dir="ltr"]{
@@ -166,52 +250,10 @@ html[dir="ltr"]{
   }
 }
 
-  
-.fixsedt {
-  top: -130px;
-  transition: all linear .5s;
-}
 
 
 
 
-// fixed whatsapp
-
-.fixed-whatsapp{
-  position: fixed;
-  bottom: 10px;
-  right: 15px;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #25d366;
-  animation-name: pulse;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
-  text-decoration: none;
-  &:focus{
-    text-decoration: none;
-  }
-  i {
-    font-size: 36px;
-    color: #ffffff;
-  }
-}
-
-
-@keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 #25d366;
-	}
-	80% {
-		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-	}
-}
 
 
 @include min-1200{
@@ -240,13 +282,6 @@ html[dir="ltr"]{
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
     padding-right: 20px;
     padding-left: 20px;
-  }
-  .fixed-whatsapp{
-    width: 50px;
-    height: 50px;
-    i {
-      font-size: 30px;
-    }
   }
 }
 

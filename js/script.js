@@ -65,10 +65,38 @@ const newsSwiper = new Swiper(' .news .swiper', {
 });
 
 
+// blog-post Swiper
+const blogPost = new Swiper(' .blog-post .swiper', {
+  loop: true,
+  autoplay: true,
+  pagination: {
+    el: ' .blog-post-parent .swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ' .blog-post-parent .swiper-button-next ',
+    prevEl: ' .blog-post-parent .swiper-button-prev',
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+      spaceBetween : 20 
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween : 30 ,
+    },
+   
+  }
+});
+
+
 
 // officeSwiper swiper
 var officeSwiper = new Swiper(".office-swiper .swiper", {
-  // loop: true,
+  loop: true,
+  autoplay : true ,
   pagination: {
     el: ".office-swiper .swiper-pagination",
     clickable: true,
@@ -105,13 +133,6 @@ var officeSwiper = new Swiper(".office-swiper .swiper", {
     },
   },
 });
-
-
-
-
-
-
-
 
 /************************************************************************************************** */
 
@@ -159,11 +180,20 @@ window.addEventListener('scroll', function() {
 
 
 
+//  mixitup
+
+if(currentPageName == "clients.html" || currentPageName == "blog.html" || currentPageName == "clients-en.html" || currentPageName == "blog-en.html"){
 
 
+let mixitDiv = document.querySelector("#mix-container");
 
+var mixer = mixitup(mixitDiv, {
+  animation: {
+    effects: "fade scale(0.5)",
+  },
+});
 
-
+}
 
 
 
@@ -174,7 +204,6 @@ window.addEventListener('scroll', function() {
 
 
 // open and close sideBar
-// open and close nav
 
 let closeBtn = document.querySelector(".closeBtn"); 
 let openBtn = document.querySelector(".bars"); 
@@ -211,17 +240,11 @@ if($(window).width() <= 768) {
 
 
 
-   
-
-
-
 /************************************************************************************************** */
 
 
 // nav nested menu
 
-
-// nested menus
 
 if($(window).width() <= 992) {
   $(".li-drop > a").click(function (e) {
@@ -243,38 +266,9 @@ $(".open-serach-btn").click(function(){
 })
 
 
-
-
-
 /************************************************************************************************** */
 
 
-//fixed nav
-
-    // //~~~~~~~~~ fixed header
-    // $(window).on("scroll", function () {
-    //   if ($(window).scrollTop() > 150) {
-    //     $("header").addClass("fixed");
-    //     $(".lang a span").css("color" , "#16697b");
-    //     if($(window).width() > 768){
-    //       $(".logo img").css("width" , "120px");
-    //     }
-    //   } else {
-    //     $("header").removeClass("fixed");
-    //     if($(window).width() > 768){
-    //       $(".logo img").css("width" , "170px");
-    //     }
-      
-    //   }
-    // });
-    // var fixedBar = document.querySelector("header"),
-    //   prevScrollposition = $(window).scrollTop();
-
-    // (window.onscroll = function () {
-    //   var o = $(window).scrollTop();
-    //   prevScrollposition < o && prevScrollposition > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), (prevScrollposition = o);
-    // })   
-  
 
 
      // to top button
@@ -303,21 +297,8 @@ $(".select2-selection").focus(function(){
  })
 
 
- mixitup
 
-let mixitDiv = document.querySelector("#mix-container");
-
-var mixer = mixitup(mixitDiv, {
-  animation: {
-    effects: "fade scale(0.5)",
-  },
-});
-
-
-
-
-
-
+// fancybox
 
 $('[data-fancybox="images-library"]').fancybox({
   buttons : [ 
@@ -327,7 +308,6 @@ $('[data-fancybox="images-library"]').fancybox({
     'fullScreen',
     'close'
   ],
-  // thumbs : false 
 });
 
 
