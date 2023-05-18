@@ -111,17 +111,25 @@ var officeSwiper = new Swiper(".office-swiper .swiper", {
 
 
 
+
+
 /************************************************************************************************** */
 
 
 // counters
 
-const mySection = document.querySelector('.counter-sec'); // get the element with ID "mySection"
-const mySectionOffsetTop = mySection.offsetTop; // get the offset top of the element
-const windowHeight = window.innerHeight; // get the height of the browser window
+
+let currentPagePath = window.location.pathname;
+var currentPageName = currentPagePath.split('/').pop(); 
+
+if(currentPageName == "index.html" || currentPageName == "about.html" || currentPageName == "about-en.html" || currentPageName == "en.html" ) {
+  
+const mySection = document.querySelector('.counter-sec'); 
+const mySectionOffsetTop = mySection.offsetTop; 
+const windowHeight = window.innerHeight; 
 
 window.addEventListener('scroll', function() {
-  const scrollPosition = window.scrollY; // get the current scroll position
+  const scrollPosition = window.scrollY; 
   if (scrollPosition > mySectionOffsetTop - windowHeight) {
 
 
@@ -147,6 +155,9 @@ window.addEventListener('scroll', function() {
     
   }
 });
+}
+
+
 
 
 
@@ -232,6 +243,9 @@ $(".open-serach-btn").click(function(){
 })
 
 
+
+
+
 /************************************************************************************************** */
 
 
@@ -289,8 +303,40 @@ $(".select2-selection").focus(function(){
  })
 
 
+ mixitup
+
+let mixitDiv = document.querySelector("#mix-container");
+
+var mixer = mixitup(mixitDiv, {
+  animation: {
+    effects: "fade scale(0.5)",
+  },
+});
+
+
+
+
+
+
+
+$('[data-fancybox="images-library"]').fancybox({
+  buttons : [ 
+    'slideShow',
+    'share',
+    'zoom',
+    'fullScreen',
+    'close'
+  ],
+  // thumbs : false 
+});
+
+
+
+
 
   })     // end of document ready
+
+
 
 
 
