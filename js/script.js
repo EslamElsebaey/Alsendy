@@ -276,6 +276,14 @@ $('[data-fancybox="images-library"]').fancybox({
 
 
 
+// trigger file button 
+
+$(".add-file").click(function(e){
+  e.preventDefault() ;
+ $(this).siblings("input[type='file'").click()
+})
+
+
 
 
   })     // end of document ready
