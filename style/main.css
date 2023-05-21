@@ -3512,6 +3512,48 @@ html[dir=ltr] .contact-form .title {
     padding: 15px 10px;
   }
 }
+.career {
+  padding: 70px 0 50px;
+}
+
+input[type=file] {
+  border: none;
+  position: relative;
+  color: transparent;
+}
+
+.add-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 103px;
+  color: white;
+  overflow: hidden;
+  top: 50%;
+  border: none;
+  transform: translateY(-50%);
+  inset-inline-end: 7px;
+  font-size: 14px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #02c2da;
+  cursor: pointer;
+}
+
+.myinput-holder {
+  position: relative;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .career {
+    padding: 50px 0;
+  }
+}
 .showToTop {
   opacity: 1;
   visibility: visible;
