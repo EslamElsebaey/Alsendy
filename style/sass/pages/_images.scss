@@ -11,7 +11,7 @@
 
 
 .fancybox-caption{
-    bottom: 190px;
+    bottom: 25%;
     background: transparent;
     padding: 0;
 }
@@ -67,7 +67,5 @@
         grid-template-columns: repeat(2 , 1fr);
         gap: 20px;
     }
-    .fancybox-caption{
-        bottom: 140px;
-    }
+  
 }

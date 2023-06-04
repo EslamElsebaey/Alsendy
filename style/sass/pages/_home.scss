@@ -1511,6 +1511,8 @@ html[dir="ltr"]{
         text-transform: capitalize;
     }
 }
+
+
 .news-parent{
     position: relative;
 }
@@ -1614,6 +1616,33 @@ html[dir="ltr"]{
         margin-inline-end: 5px;
     }
 }
+
+
+.news-swiper{
+    .swiper-slide{
+        flex-shrink: unset;
+        width: 50%;
+    }
+    .swiper-slide:first-of-type{
+        margin-inline-end: 30px;
+    }
+     .swiper-button-next,  .swiper-button-prev{
+        display: none;
+    }
+}
+
+@include max-768 {
+    .news-swiper{
+        .swiper-slide{
+            width: 100%;
+        }
+    }
+    .news-swiper .swiper-slide:first-of-type{
+        margin-inline-end: 0px;
+    }
+
+}
+
 //  media
 
 @include max-992 {

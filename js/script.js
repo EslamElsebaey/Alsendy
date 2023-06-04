@@ -9,6 +9,50 @@ $(window).on("load", function () {
 $(document).ready(function(){
 
 
+  if($(".service-parent .service-item").length %2 !== 0){
+    $(".service-parent").addClass("service-parent-edit");
+   }
+  
+
+
+  if($(".counter-sec").length > 0)  {
+    const mySection = document.querySelector('.counter-sec'); 
+    const mySectionOffsetTop = mySection.offsetTop; 
+    const windowHeight = window.innerHeight; 
+    
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY; 
+      if (scrollPosition > mySectionOffsetTop - windowHeight) {
+    
+    
+        let  numDivs  = document.querySelectorAll(".num-holder h4") ; 
+        let interval = 5000 ; 
+        
+      numDivs.forEach((numDiv)=>{
+        if(numDiv.innerHTML == "0"){
+          let startValue = 0 ; 
+          let endValue = parseInt(numDiv.dataset.num ) ; 
+          let duration =  Math.floor(interval / numDiv.dataset.num )  ;
+          let counter =  setInterval(() => {
+          startValue++ ;
+          numDiv.textContent = startValue ;
+           if(startValue == endValue){
+             clearInterval(counter)
+          }
+      }, duration);
+        }
+      
+    } )
+    
+        
+      }
+    });
+  }
+
+ 
+
+
+
 /************************************************************************************************** */
 
 
@@ -38,9 +82,10 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 });
 
 
+
 // news swiper
 const newsSwiper = new Swiper(' .news .swiper', {
-  loop: true,
+  // loop: true,
   autoplay: true,
   pagination: {
     el: '.news-parent .swiper-pagination',
@@ -65,10 +110,44 @@ const newsSwiper = new Swiper(' .news .swiper', {
 });
 
 
+var numSlides = $(' .news .swiper-slide').length;
+if (numSlides > 2) {
+  $(".news").removeClass("news-swiper");
+    // news swiper
+    const newsSwiper = new Swiper(' .news .swiper', {
+      loop: true,
+      autoplay: true,
+      spaceBetween : 30 , 
+      pagination: {
+        el: '.news-parent .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.news-parent .swiper-button-next ',
+        prevEl: '.news-parent .swiper-button-prev',
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+        },
+      }
+    });
+    
+
+}
+
+
+
 // blog-post Swiper
 const blogPost = new Swiper(' .blog-post .swiper', {
   loop: true,
   autoplay: true,
+  preventDuplicates: true ,
   pagination: {
     el: ' .blog-post-parent .swiper-pagination',
     clickable: true,
@@ -92,11 +171,14 @@ const blogPost = new Swiper(' .blog-post .swiper', {
 });
 
 
+if($(".office-swiper .swiper-slide").length % 2 !== 0){
+  $(".office-swiper  .swiper-wrapper").addClass("edit-office-swiper")
+}
 
 // officeSwiper swiper
 var officeSwiper = new Swiper(".office-swiper .swiper", {
-  loop: true,
-  autoplay : true ,
+  // loop: true,
+  autoplay : true , 
   pagination: {
     el: ".office-swiper .swiper-pagination",
     clickable: true,
@@ -140,15 +222,9 @@ var officeSwiper = new Swiper(".office-swiper .swiper", {
 //  mixitup
 
 
-let currentPagePath = window.location.pathname;
-var currentPageName = currentPagePath.split('/').pop(); 
 
-
-
-
-if(currentPageName == "clients.html" || currentPageName == "blog.html" || currentPageName == "clients-en.html" || currentPageName == "blog-en.html"){
-
-
+if($("#mix-container").length > 0) {
+  
 let mixitDiv = document.querySelector("#mix-container");
 
 var mixer = mixitup(mixitDiv, {
@@ -158,6 +234,7 @@ var mixer = mixitup(mixitDiv, {
 });
 
 }
+
 
 
 
