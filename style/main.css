@@ -3309,6 +3309,7 @@ html[dir=ltr] .service-parent .service-item p {
   font-weight: 700;
   margin: 0 0 15px;
   color: #004658;
+  text-transform: capitalize;
 }
 
 .comment {
@@ -3393,6 +3394,7 @@ html[dir=ltr] .service-parent .service-item p {
   font-weight: 700;
   margin: 0 0 15px;
   color: #004658;
+  text-transform: none;
 }
 .add-comment .comments-hint {
   font-size: 14px;
@@ -3484,14 +3486,8 @@ html[dir=ltr] .prev-next-articles a.prev-article i, html[dir=ltr] .prev-next-art
     text-align: center;
     line-height: 1.7;
   }
-  .add-comment .btn-primary {
-    margin: auto;
-  }
   .comment .comment-date, .comment .comment-body {
     font-size: 12px;
-  }
-  html[dir=ltr] .add-comment .btn-primary {
-    margin: 0 auto;
   }
   .comment .comment-date::before {
     display: none;

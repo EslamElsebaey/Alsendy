@@ -234,7 +234,6 @@
         &:hover{
             background-color: #004658;
             color: #fff;
-            // border-color: #02c2da;
         }
     }
   }
@@ -244,6 +243,7 @@
     font-weight: 700;
     margin: 0 0 15px;
     color: #004658;
+    text-transform: capitalize;
   }
 
   .comment {
@@ -335,6 +335,7 @@
         font-weight: 700;
         margin: 0 0 15px;
         color: #004658;
+        text-transform: none;
     }
     .comments-hint{
         font-size: 14px;
@@ -435,15 +436,11 @@ html[dir="ltr"]{
         text-align: center;
         line-height: 1.7;
     }
-    .add-comment .btn-primary{
-        margin: auto;
-    }
+    
     .comment .comment-date , .comment .comment-body{
         font-size: 12px;
     }
-    html[dir=ltr] .add-comment .btn-primary{
-       margin: 0 auto;
-    }
+    
     .comment .comment-date::before {
         display: none;
       }
