@@ -493,8 +493,7 @@ button.close i {
   margin-top: 30px;
 }
 .myform .myLabel {
-  -webkit-padding-start: 20px;
-          padding-inline-start: 20px;
+  padding-inline-start: 20px;
   font-size: 14px;
   color: #004658;
   font-weight: 600;
@@ -586,8 +585,7 @@ button.close i {
     padding: 0 22px;
   }
   .myform .myLabel {
-    -webkit-padding-start: 10px;
-            padding-inline-start: 10px;
+    padding-inline-start: 10px;
     font-size: 13px;
   }
 }
@@ -712,8 +710,7 @@ html[dir=ltr] .book-appointment {
   font-weight: 900;
   position: relative;
   font-size: 11px;
-  -webkit-margin-start: 2px;
-          margin-inline-start: 2px;
+  margin-inline-start: 2px;
   transition: all linear 0s;
 }
 
@@ -734,24 +731,21 @@ html[dir=ltr] .book-appointment {
 .topheader-cont .links a {
   font-size: 14px;
   color: #ffffff;
-  -webkit-margin-end: 25px;
-          margin-inline-end: 25px;
+  margin-inline-end: 25px;
   transition: color linear 0.2s;
 }
 .topheader-cont .links a:hover {
   color: #02c2da;
 }
 .topheader-cont .links a:last-of-type {
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
 }
 .topheader-cont .social {
   display: flex;
   align-items: center;
 }
 .topheader-cont .social a {
-  -webkit-margin-end: 20px;
-          margin-inline-end: 20px;
+  margin-inline-end: 20px;
 }
 .topheader-cont .social a:hover i {
   color: #02c2da;
@@ -764,8 +758,7 @@ html[dir=ltr] .book-appointment {
 }
 
 .topheader-cont .social a:last-of-type {
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
 }
 
 nav {
@@ -860,8 +853,7 @@ nav .closeBtn {
   margin: 0;
 }
 .ul-navbar > li {
-  -webkit-margin-end: 25px;
-          margin-inline-end: 25px;
+  margin-inline-end: 25px;
 }
 .ul-navbar > li:hover .nav-ancor {
   text-decoration: none;
@@ -910,8 +902,7 @@ nav .closeBtn {
     font-size: 25px;
   }
   .ul-navbar > li {
-    -webkit-margin-end: 15px;
-            margin-inline-end: 15px;
+    margin-inline-end: 15px;
   }
   .top-header {
     padding-left: 10px;
@@ -924,8 +915,7 @@ nav .closeBtn {
     padding: 0 10px;
   }
   .topheader-cont .social a, .topheader-cont .links a {
-    -webkit-margin-end: 20px;
-            margin-inline-end: 20px;
+    margin-inline-end: 20px;
   }
   .topheader-cont .social a i {
     font-size: 20px;
@@ -977,8 +967,7 @@ nav .closeBtn {
     margin-bottom: 7px;
   }
   .ul-navbar > li {
-    -webkit-margin-end: 0;
-            margin-inline-end: 0;
+    margin-inline-end: 0;
     width: 100%;
     margin-bottom: 15px;
   }
@@ -995,8 +984,7 @@ nav .closeBtn {
   }
   .li-drop > a::after {
     font-size: 16px;
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
+    margin-inline-start: 0;
     transition: all linear 0.3s;
   }
   .search-item {
@@ -1039,8 +1027,7 @@ nav .closeBtn {
     display: block;
   }
   .bars {
-    -webkit-margin-start: 20px;
-            margin-inline-start: 20px;
+    margin-inline-start: 20px;
   }
   .open-serach-btn:hover, .bars:hover {
     color: #fff;
@@ -1089,8 +1076,7 @@ nav .closeBtn {
   }
   .ul-navbar li {
     margin-bottom: 15px;
-    -webkit-margin-end: 0;
-            margin-inline-end: 0;
+    margin-inline-end: 0;
   }
   .closeBtn i {
     color: #808080;
@@ -1171,8 +1157,7 @@ html[dir=ltr] .mainBanner .banner-desc h2 {
   margin: 0;
 }
 .mainBanner .swiper-buttons div:first-of-type {
-  -webkit-margin-end: 20px;
-          margin-inline-end: 20px;
+  margin-inline-end: 20px;
 }
 .mainBanner .swiper-buttons div i {
   transition: opacity linear 0.2s;
@@ -1820,8 +1805,7 @@ html[dir=ltr] .service-request-sec h2 {
 }
 .news-views i {
   display: inline-block;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
+  margin-inline-end: 5px;
   font-size: 17px;
 }
 
@@ -1830,8 +1814,7 @@ html[dir=ltr] .service-request-sec h2 {
   width: 50%;
 }
 .news-swiper .swiper-slide:first-of-type {
-  -webkit-margin-end: 30px;
-          margin-inline-end: 30px;
+  margin-inline-end: 30px;
 }
 .news-swiper .swiper-button-next, .news-swiper .swiper-button-prev {
   display: none;
@@ -1842,8 +1825,7 @@ html[dir=ltr] .service-request-sec h2 {
     width: 100%;
   }
   .news-swiper .swiper-slide:first-of-type {
-    -webkit-margin-end: 0px;
-            margin-inline-end: 0px;
+    margin-inline-end: 0px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1926,8 +1908,7 @@ footer .footer-title {
 .contact > ul > li > i {
   font-size: 18px;
   color: #004658;
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin-inline-end: 10px;
   transition: color linear 0.2s;
 }
 
@@ -1937,8 +1918,7 @@ footer .footer-title {
 }
 .contact > ul > li .social a {
   width: 40px;
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin-inline-end: 10px;
   height: 40px;
   border-radius: 50%;
   background-color: #004658;
@@ -1956,8 +1936,7 @@ footer .footer-title {
 }
 
 .contact > ul > li .social a:last-of-type {
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
 }
 
 .contact > ul > li {
@@ -2052,8 +2031,7 @@ html[dir=ltr] .message button {
   align-items: flex-end;
 }
 .tasawk-sec img {
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
+  margin-inline-start: 5px;
 }
 
 .copyright {
@@ -2072,8 +2050,7 @@ html[dir=ltr] .message button {
   margin-bottom: 0;
 }
 .copyright .tasawk-logo {
-  -webkit-margin-start: 8px;
-          margin-inline-start: 8px;
+  margin-inline-start: 8px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2212,8 +2189,7 @@ html[dir=ltr] .message button {
   display: block;
 }
 .office-item-cont .office-item-details {
-  -webkit-margin-start: 20px;
-          margin-inline-start: 20px;
+  margin-inline-start: 20px;
 }
 .office-item-cont .office-item-details h3 {
   font-size: 16px;
@@ -2400,8 +2376,7 @@ html[dir=ltr] .message button {
     height: auto;
   }
   .office-item-cont .office-item-details {
-    -webkit-margin-start: 15px;
-            margin-inline-start: 15px;
+    margin-inline-start: 15px;
   }
   .office-item-cont .office-item-details p {
     line-height: 1.6;
@@ -2531,10 +2506,8 @@ html[dir=ltr] .quality-standards-parent .quality-standards-item h4 {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.05));
   background-color: #ffffff;
   border: 2px solid #f2f2f2;
-  -webkit-padding-start: 30px;
-          padding-inline-start: 30px;
-  -webkit-padding-end: 12px;
-          padding-inline-end: 12px;
+  padding-inline-start: 30px;
+  padding-inline-end: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 30px;
@@ -2565,8 +2538,7 @@ html[dir=ltr] .quality-standards-parent .quality-standards-item h4 {
   color: #004658;
   font-weight: 300;
   text-align: start;
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  margin-inline-start: 10px;
 }
 .branch-details ul li span:hover, .branch-details ul li a:hover {
   color: #004658;
@@ -2655,8 +2627,7 @@ html[dir=ltr] .quality-standards-parent .quality-standards-item h4 {
   text-align: center;
   margin: 0;
   margin-bottom: 10px;
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin-inline-end: 10px;
   transition: all linear 0.2s;
 }
 
@@ -2682,8 +2653,7 @@ html[dir=ltr] .quality-standards-parent .quality-standards-item h4 {
 }
 
 .mix-btn:last-of-type {
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3090,13 +3060,11 @@ html[dir=ltr] .service-parent .service-item p {
 .blog-post .post-details div {
   display: flex;
   align-items: center;
-  -webkit-margin-start: 25px;
-          margin-inline-start: 25px;
+  margin-inline-start: 25px;
 }
 .blog-post .post-details div span {
   display: inline-block;
-  -webkit-margin-start: 7px;
-          margin-inline-start: 7px;
+  margin-inline-start: 7px;
   font-size: 14px;
   color: #999999;
   font-weight: 300;
@@ -3130,8 +3098,7 @@ html[dir=ltr] .service-parent .service-item p {
   font-size: 12px;
   color: #808080;
   padding: 7px 14px;
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin-inline-end: 10px;
   transition: all linear 0.2s;
 }
 .tags a:hover {
@@ -3145,8 +3112,7 @@ html[dir=ltr] .service-parent .service-item p {
   justify-content: flex-start;
 }
 .share-sec a {
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin-inline-end: 10px;
   color: #fff;
 }
 .share-sec a i {
@@ -3158,8 +3124,7 @@ html[dir=ltr] .service-parent .service-item p {
   padding: 12px 15px;
   display: flex;
   align-items: center;
-  -webkit-padding-end: 30px;
-          padding-inline-end: 30px;
+  padding-inline-end: 30px;
   border-radius: 2px;
   min-width: 130px;
 }
@@ -3173,7 +3138,6 @@ html[dir=ltr] .service-parent .service-item p {
   font-size: 12px;
   position: relative;
   display: inline-block;
-  -webkit-margin-start: 15px;
   margin-inline-start: 25px;
 }
 .share-sec a.facebook span::after, .share-sec a.twitter span::after {
@@ -3247,12 +3211,10 @@ html[dir=ltr] .service-parent .service-item p {
   color: #b3b3b3;
 }
 .prev-next-articles a.prev-article i {
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin-inline-end: 10px;
 }
 .prev-next-articles a.next-article i {
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  margin-inline-start: 10px;
 }
 
 .another-articles {
@@ -3334,8 +3296,7 @@ html[dir=ltr] .service-parent .service-item p {
 }
 
 .comment .comment-text {
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  margin-inline-start: 10px;
   margin-top: 10px;
 }
 
@@ -3436,8 +3397,7 @@ html[dir=ltr] .service-parent .service-item p {
   border-radius: 30px;
   box-shadow: none;
   transition: all 0.2s linear;
-  -webkit-margin-start: auto;
-          margin-inline-start: auto;
+  margin-inline-start: auto;
 }
 .add-comment .sendComment-btn:hover {
   background-color: #004658;
@@ -3539,19 +3499,16 @@ html[dir=ltr] .prev-next-articles a.prev-article i, html[dir=ltr] .prev-next-art
     font-size: 14px;
   }
   .prev-next-articles a.prev-article i {
-    -webkit-margin-end: 4px;
-            margin-inline-end: 4px;
+    margin-inline-end: 4px;
   }
   .prev-next-articles a.next-article i {
-    -webkit-margin-start: 4px;
-            margin-inline-start: 4px;
+    margin-inline-start: 4px;
   }
   .prev-next-articles a i, .blog-post .post-details div i {
     font-size: 20px;
   }
   .blog-post .post-details div {
-    -webkit-margin-start: 20px;
-            margin-inline-start: 20px;
+    margin-inline-start: 20px;
   }
   .another-articles {
     padding-top: 45px;
@@ -3791,6 +3748,115 @@ input[type=file] {
   .news-page .news-content-parent, .events-page .events-content-parent {
     grid-template-columns: 1fr;
     row-gap: 30px;
+  }
+}
+.soon {
+  height: 100vh;
+  position: relative;
+}
+
+.soon-content {
+  width: 660px;
+  max-width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.soon-logo {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.soon-logo img {
+  width: 439px;
+  max-width: 100%;
+}
+
+.soon-text .soon-title {
+  font-size: 24px;
+  line-height: 40px;
+  color: #004658;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.soon-text .soon-title:first-of-type {
+  margin-bottom: 5px;
+}
+
+.soon-contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.soon-contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.soon-contact-item a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #004658;
+  text-align: right;
+  display: block;
+  margin-bottom: 10px;
+  transition: all linear 0.2s;
+}
+.soon-contact-item a:hover {
+  color: #02c2da;
+}
+.soon-contact-item span {
+  font-size: 20px;
+  line-height: 28px;
+  color: #004658;
+  text-align: right;
+}
+.soon-contact-item .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #02c2da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.soon-contact-item .icon i {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .soon-text .soon-title {
+    font-size: 18px;
+  }
+  .soon-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .soon-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .soon-text .soon-title:first-of-type {
+    margin-bottom: 0;
+  }
+  .soon-contact {
+    margin-top: 40px;
+  }
+  .soon-logo img {
+    width: 300px;
+  }
+  .soon-contact-item {
+    margin-bottom: 35px;
   }
 }
 .showToTop {
