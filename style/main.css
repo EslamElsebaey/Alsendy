@@ -1597,8 +1597,8 @@ html[dir=ltr] .service-request-sec h2 {
   position: absolute;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  top: calc(2px/-1);
-  left: calc(2px/-1);
+  top: calc(2px / -1);
+  left: calc(2px / -1);
   background: linear-gradient(to right, #02c2da 0%, #02c2da 100%), linear-gradient(to top, #02c2da 50%, transparent 50%), linear-gradient(to top, #02c2da 50%, transparent 50%), linear-gradient(to right, #02c2da 0%, #02c2da 100%), linear-gradient(to left, #02c2da 0%, #02c2da 100%);
   background-size: 100% 2px, 2px 200%, 2px 200%, 0% 2px, 0% 2px;
   background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;

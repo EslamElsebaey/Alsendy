@@ -295,7 +295,7 @@ if($(window).width() <= 992) {
     $(".li-drop a").not($(this)).siblings(".ul-drop").slideUp(300);
     $(".li-drop a").not($(this)).removeClass("icon-rotate");
     })
-    }
+}
 
 /************************************************************************************************** */
 
