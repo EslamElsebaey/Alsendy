@@ -2,18 +2,6 @@
 
 $(window).on("load", function () {
   $(".preloader").fadeOut();
-})
-
-
-
-$(document).ready(function(){
-
-
-  if($(".service-parent .service-item").length %2 !== 0){
-    $(".service-parent").addClass("service-parent-edit");
-   }
-  
-
 
   if($(".counter-sec").length > 0)  {
     const mySection = document.querySelector('.counter-sec'); 
@@ -49,19 +37,18 @@ $(document).ready(function(){
     });
   }
 
- 
+
+  /************************************************************************************************** */
 
 
-
-/************************************************************************************************** */
-
-
-    // SWIPERS 
+  
+// SWIPERS 
 
 // main Swiper 
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
   autoplay: true,
+  speed: 1000,
   draggable: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
@@ -86,6 +73,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 // news swiper
 const newsSwiper = new Swiper(' .news .swiper', {
   // loop: true,
+  speed : 1000 ,
   autoplay: true,
   pagination: {
     el: '.news-parent .swiper-pagination',
@@ -110,12 +98,14 @@ const newsSwiper = new Swiper(' .news .swiper', {
 });
 
 
+
 var numSlides = $(' .news .swiper-slide').length;
 if (numSlides > 2) {
   $(".news").removeClass("news-swiper");
-    // news swiper
+    
     const newsSwiper = new Swiper(' .news .swiper', {
       loop: true,
+      speed : 1000 ,
       autoplay: true,
       spaceBetween : 30 , 
       pagination: {
@@ -147,6 +137,7 @@ if (numSlides > 2) {
 const blogPost = new Swiper(' .blog-post .swiper', {
   loop: true,
   autoplay: true,
+  speed : 1000 ,
   preventDuplicates: true ,
   pagination: {
     el: ' .blog-post-parent .swiper-pagination',
@@ -177,8 +168,8 @@ if($(".office-swiper .swiper-slide").length % 2 !== 0){
 
 // officeSwiper swiper
 var officeSwiper = new Swiper(".office-swiper .swiper", {
-  // loop: true,
   autoplay : true , 
+  speed : 1000 ,
   pagination: {
     el: ".office-swiper .swiper-pagination",
     clickable: true,
@@ -215,6 +206,20 @@ var officeSwiper = new Swiper(".office-swiper .swiper", {
     },
   },
 });
+
+
+
+}) // End widow load
+
+
+
+$(document).ready(function(){
+
+
+  if($(".service-parent .service-item").length %2 !== 0){
+    $(".service-parent").addClass("service-parent-edit");
+   }
+  
 
 /************************************************************************************************** */
 
@@ -363,7 +368,7 @@ $(".add-file").click(function(e){
 
 
 
-  })     // end of document ready
+  })     // end  document ready
 
 
 
